@@ -6,7 +6,7 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="REGIONAL REFUGEE AND MIGRANT RESPONSE PLAN (RRMRP) 2016">
 <meta property="og:description" content="REGIONAL REFUGEE AND MIGRANT RESPONSE PLAN (RRMRP) 2016 ">
-    <title>REGIONAL REFUGEE AND MIGRANT RESPONSE PLAN (RRMRP) 2016 </title>
+    <title>REGIONAL REFUGEE AND MIGRANT RESPONSE PLAN (RRMRP__) 2016 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -25,9 +25,9 @@
 path {
   stroke: #75F75A;
   stroke-width: 0.6px;
-  
+
   }
-  
+
 .dc-chart g.selected path {
 }
 
@@ -35,12 +35,12 @@ path {
     fill: white;
 	stroke: #75F75A;
 	stroke-width: 0.6px;
-	
-}  
- 
+
+}
+
  g.deselected path {
     fill: #EAEAEA;
-	
+
 }
 
 
@@ -48,7 +48,7 @@ g.selected path {
     stroke: yellow;
     stroke-width: 2px;
 }
-</style>  
+</style>
   </head>
 
   <body>
@@ -56,8 +56,8 @@ g.selected path {
                 <h2><a  href="http://data.unhcr.org/jordan"><img src="images/coordination.png" style="height: 48px; width: 48px"></a>
         <strong>REGIONAL REFUGEE AND MIGRANT RESPONSE PLAN (RRMRP) 2016</strong></h2>
         <div class="col-xs-12">
-		The RRMRP is co-led by the United Nations High Commissioner for Refugees (UNHCR) and the International Organization for Migration (IOM), bringing together more than 60 UN agencies and NGOs under one consolidated plan for the refugee and migrant crisis affecting Southern Europe and the Western Balkans. 		
-        <br> <strong>All charts are based on USD values appealed. Click on any of the graphs below to filter and slice the data.</strong> 
+		The RRMRP is co-led by the United Nations High Commissioner for Refugees (UNHCR) and the International Organization for Migration (IOM), bringing together more than 60 UN agencies and NGOs under one consolidated plan for the refugee and migrant crisis affecting Southern Europe and the Western Balkans.
+        <br> <strong>All charts are based on USD values appealed. Click on any of the graphs below to filter and slice the data.</strong>
             For more information on the RRMRP, click here  <a href="http://data.unhcr.org/mediterranean/regional.php" target="_blank">here</a>.<br>
             </div>
 
@@ -69,74 +69,74 @@ g.selected path {
             </div>
             <br>
             <div class="col-md-4">
-                <a class="reset btn btn-primary btn-sm" id="reset" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>			
+                <a class="reset btn btn-primary btn-sm" id="reset" href="javascript:dc.filterAll();dc.redrawAll();">Reset All</a>
                 <a class="btn btn btn-success" href="javascript:void(0);" onclick="javascript:introJs().start();">Tutorial</a>
             </div>
         </div>
-	
+
         <div class="row">
             <div class="col-md-4">
 
                 <div class="row">
                     <div id="sector" class="col-xs-12 col-md-8 dc-chart" data-step="2" data-intro="Click on this row chart chart to filter by sector." data-position="right">
-                        <h5><strong>By Sectors / Working Groups</strong></h5>   
+                        <h5><strong>By Sectors / Working Groups</strong></h5>
                     </div>
                 </div>
                 <div style="position:relative;top:180;left:20px; width:700px">
 				<strong>
 				<BR>
-				UNHCR & IOM thank all partners for their data and cooperation. 
+				UNHCR & IOM thank all partners for their data and cooperation.
 				<BR>
 				Produced by the Europe Bureau, UNHCR, Geneva, with support from the UNHCR Jordan team.
 				</strong>
 
-               </div>			
+               </div>
 
             </div>
-            
-            
+
+
             <div class="col-md-4">
                 <div class="row">
                     <div id="map2" class="col-xs-12 col-md-8 dc-chart" data-step="4" data-intro="Or click on this map to filter by area of operation." data-position="right">
                         <h5><strong>Filter on the Map </strong><small>by Country</small></h5>
-                        
+
                     </div>
                 </div>
                 <div class="row">
 				<br>
                     <div id="area" class="col-xs-12 col-md-8 dc-chart" data-step="5" data-intro="Click on this row chart to filter by area of operation." data-position="right">
                         <h5><strong>Top Countries </strong><small>by Country</small></h5>
-                        
+
                     </div>
 
-                </div>					
+                </div>
             </div>
-            
-            
+
+
             <div class="col-md-4">
                 <div class="row">
                     <div id="orgs" class="col-xs-12 col-md-8 dc-chart" data-step="6" data-intro="Click on this row chart to filter by partner." data-position="left">
                         <h5><strong>Top 20 Partners </strong><small>by Appeal. Scroll down for Partners filter.</small></h5>
                     </div>
-					
+
 				</div>
 				<div class="row">
-				
-                </div>                 
-                
+
+                </div>
+
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-   
+
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
-   
+
             </div>
         </div>
-        
+
                 <div class="row">
 
             <div class="col-md-12" data-step="11" data-intro="Click on this row chart to filter by partner." data-position="right">
@@ -212,11 +212,11 @@ g.selected path {
 
                 <br><br>
             </div>
-        </div>        
+        </div>
 
 
 
-        
+
     </strong></strong></div><strong><strong>
 
     <script type="text/javascript" src="js/d3_002.js"></script>
@@ -231,7 +231,7 @@ g.selected path {
         var org_chart = dc.rowChart("#orgs");
         var area_chart = dc.rowChart("#area");
 
-        
+
         var map2_chart = dc.geoChoroplethChart("#map2");
 
         d3.csv("data/rrmrpviz.csv", function(csv_data){
@@ -249,22 +249,22 @@ g.selected path {
             cf.total = cf.dimension(function(d) { return d.Total; });
 
 
-            
+
 
             var agency = cf.agency.group();
             var sector = cf.sector.group();
             var area = cf.area.group();
             var ccode = cf.ccode.group();
             var all = cf.groupAll();
-            
-            
+
+
             var bytotalGroup = cf.total.groupAll().reduceSum(function (d) { return d.Total; });
 
             var sectorByTotal = cf.sector.group().reduceSum(function (d) { return d.Total; });
             var agencyByTotal = cf.agency.group().reduceSum(function (d) { return d.Total; });
             var areaByTotal = cf.area.group().reduceSum(function (d) { return d.Total; });
             var ccodeByTotal = cf.ccode.group().reduceSum(function (d) { return d.Total; });
-            
+
 
 
 
@@ -393,7 +393,7 @@ g.selected path {
 					.title(function (d) {
                         return "Geo-Filter: " + d.key;
                     });
-                    
+
                     $('#reset').on('click', function (){
                       dc.filterAll();
                       dc.redrawAll();
@@ -406,7 +406,7 @@ g.selected path {
                     d3.selectAll("g.row").call(rowTip);
                     d3.selectAll("g.row").on('mouseover', rowTip.show)
                         .on('mouseout', rowTip.hide);
-					
+
 
                 });
 
@@ -414,19 +414,19 @@ g.selected path {
             $('#dashboard').show();
 
         });
-	
+
 	function rtip(){
-            var numberFormat = d3.format(",f");	
+            var numberFormat = d3.format(",f");
             var rowTip = d3.tip()
                   .attr('class', 'd3-tip')
                   .offset([-10, 0])
                   .html(function (d) { return "<span style='color: #f0027f'>" +  d.key + "</span> : "  + numberFormat(d.value) + " USD"; });
 
-	
+
 	                    d3.selectAll("g.row").call(rowTip);
                     d3.selectAll("g.row").on('mouseover', rowTip.show)
                         .on('mouseout', rowTip.hide);
-				}	
+				}
     </script>
     <script src="js/bootstrap.js"></script>
 
